@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div>  <div>
-      <div className="bg-gray-900 text-gray-300">
+      <div className="bg-indigo-950 text-gray-300">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 py-10">
           <div>
             <h3 className="text-white font-semibold mb-3">ABOUT US</h3>
@@ -43,10 +43,10 @@ function Footer() {
               <a href="https://twitter.com/" target="_blank" rel="" className="hover:text-sky-400 transition">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="https://facebook.com/" target="_blank" rel="" className="hover:text-blue-500 transition">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="" className="hover:text-blue-400 transition">
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>

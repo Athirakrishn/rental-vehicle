@@ -10,6 +10,7 @@ import Term from './pages/Term'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import RefundPolicy from './pages/RefundPolicy'
 import RentalAgreement from './pages/RentalAgreement'
+import PreeLoader from './components/PreeLoader'
 
 
 
@@ -38,7 +39,7 @@ function App() {
   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
   <Route path="/refund-policy" element={<RefundPolicy />} />
   <Route path="/rental-agreement" element={<RentalAgreement />} />
- 
+ <Route path='/preeloader' element={<PreeLoader/>}/>
     </Routes>
     </>
   )
