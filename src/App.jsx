@@ -5,6 +5,14 @@ import About from './user/pages/About'
 import  Profile from './user/pages/Profile'
 import Contact from './user/pages/Contact'
 
+// footer
+import Term from './pages/Term'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import RefundPolicy from './pages/RefundPolicy'
+import RentalAgreement from './pages/RentalAgreement'
+
+
+
 function App() {
   return (
     <>
@@ -24,6 +32,13 @@ function App() {
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>       
 <Route path='' element={</>}/>        */}
+
+{/* footer contents*/}
+  <Route path="/terms" element={<Term />} />
+  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+  <Route path="/refund-policy" element={<RefundPolicy />} />
+  <Route path="/rental-agreement" element={<RentalAgreement />} />
+ 
     </Routes>
     </>
   )
