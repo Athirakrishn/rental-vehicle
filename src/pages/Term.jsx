@@ -5,7 +5,7 @@ function Term() {
   return (
    <div className="bg-black w-full">
       <div className="max-w-4xl mx-auto px-6 py-12 text-gray-100 ">
-        <div className="bg-gray-900/80 p-8 rounded-2xl shadow-lg">
+        <div className="bg-gray-800/60 p-8 rounded-2xl shadow-lg">
           <header className="mb-6">
             <h1 className="text-3xl font-bold text-white mb-1">UrbanGo – Terms &amp; Conditions</h1>
             <p className="text-sm text-gray-300">Last Updated: October 8, 2025</p>
