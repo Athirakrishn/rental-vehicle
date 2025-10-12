@@ -4,14 +4,14 @@ import Home from './user/pages/Home'
 import About from './user/pages/About'
 import  Profile from './user/pages/Profile'
 import Contact from './user/pages/Contact'
-import Car from './pages/Car'
+import Car from './user/pages/Car'
 // footer
 import Term from './pages/Term'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import RefundPolicy from './pages/RefundPolicy'
 import RentalAgreement from './pages/RentalAgreement'
 import PreeLoader from './components/PreeLoader'
-
+import ViewCar from './user/pages/ViewCar'
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
 <Route path='/about' element={<About/>}/>
 <Route path='/car' element={<Car/>}/>
+<Route path='/car/:id/view' element={<ViewCar/>}/>
 <Route path='/contact' element={<Contact/>}/>
 <Route path='/profile' element={<Profile/>}/>
 {/* <Route path='' element={</>}/>

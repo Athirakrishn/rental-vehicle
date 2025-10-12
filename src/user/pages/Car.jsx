@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import UserHeader from '../user/components/UserHeader'
+import Footer from '../../components/Footer'
+import UserHeader from '../components/UserHeader'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCab, faMagnifyingGlass, faMapPin, faScrewdriverWrench, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
@@ -17,9 +17,9 @@ function Car() {
           <p className='text-gray-600 my-2'>Browse our selection of premium vehicles available for your next adventure
 </p>
     
-            <input type='text' className='relative bg-white w-150 h-12 rounded-[50px] ' placeholder=' Search by make, model, or features'/>
+            <input type='text' className='relative bg-white md:w-100 md:h-12 w-80 h-10 rounded-[50px] ' placeholder=' Search by make, model, or features'/>
             
-          <  FontAwesomeIcon className='absolute   mt-24 ml-130 text-3xl text-orange-300' icon={faMagnifyingGlass}  /> 
+          <  FontAwesomeIcon className=' absolute md:mt-24 mt-30 md:ml-80   text-3xl text-orange-300' icon={faMagnifyingGlass}  /> 
        
      
       
@@ -35,11 +35,13 @@ function Car() {
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -54,6 +56,7 @@ function Car() {
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -295,9 +298,6 @@ function Car() {
           </div>
 
         </div>
-  <div className='flex justify-center my-5'>    
-      <Link to={'/cars'} className='text-xl   p-2 rounded border border-gray-500'>Explore all Cars</Link></div>
-
         
       </section>
 <Footer/>
