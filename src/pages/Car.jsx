@@ -1,30 +1,35 @@
 import React from 'react'
-import Footer from '../../components/Footer'
-import Header from '../components/UserHeader'
+import Footer from '../components/Footer'
+import UserHeader from '../user/components/UserHeader'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faCab, faMagnifyingGlass, faMapPin, faScrewdriverWrench, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-function Home() {
+function Car() {
   return (
     <div>
-      <Header />
-      {/* Hero section */}
-      <section className='h-120 flex justify-center items-center  ' style={{
-        backgroundImage:
-          "url('https://www.enterprise.com/en/exotic-car-rental/vehicles/midsize-luxury-suv/_jcr_content/root/container/container/container_1805038189/image_1600151533.coreimg.jpeg/1665004956267/vehicle-category-list-page-hero-midsize-luxury-suv-1920x565.jpeg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"
-      }}>
-        <div className='h-120 w-full flex justify-center items-center ' style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>
+      <UserHeader/>
 
+      {/* search */}
+      <section className='h-80 bg-orange-100 grid grid-col'> 
+         <div className=" flex flex-col justify-center items-center my-5">
+          <h1 className='text-4xl font-bold text-gray-700 py-2'>Available <span className='text-orange-500'>C</span>ars </h1>
+          <p className='text-gray-600 my-2'>Browse our selection of premium vehicles available for your next adventure
+</p>
+    
+            <input type='text' className='relative bg-white w-150 h-12 rounded-[50px] ' placeholder=' Search by make, model, or features'/>
+            
+          <  FontAwesomeIcon className='absolute   mt-24 ml-130 text-3xl text-orange-300' icon={faMagnifyingGlass}  /> 
+       
+     
+      
         </div>
-
+        
       </section>
-      {/*  explore cars */}
-      <section>
-        <div className=" flex flex-col justify-center items-center my-5">
-          <h1 className='text-4xl font-bold text-gray-600'>Featured <span className='text-orange-500'>C</span>ars </h1>
-          <p className='md:mx-auto mx-10 font-semibold text-gray-700'>Explore our selection of premium vehicles available for your next adventure</p>
-        </div>
+
+      {/* cars */}
+     <section>
+       
         <div className=" md:grid md:grid-cols-3 md:px-39 place-items-center  ">
           <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
@@ -43,7 +48,7 @@ function Home() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
@@ -278,10 +283,12 @@ function Home() {
                   <FontAwesomeIcon icon={faCab} /> <span>Hybrid</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faScrewdriverWrench} /> <span>Semi-Automatic</span>
+                  <FontAwesomeIcon icon={faScrewdriverWrench
+                  } /> <span>Semi-Automatic</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faMapPin} /> <span>New York</span>
+                  <FontAwesomeIcon icon={faMapPin
+                  } /> <span>New York</span>
                 </div>
               </div>
             </div>
@@ -293,37 +300,9 @@ function Home() {
 
         
       </section>
-
-      {/* faq section */}
-      <section>
-
-      </section>
-
-      {/* testimonals */}
-      <section>
-
-      </section>
-
-      {/* subscription */}
-      {/* <section>
- <div>
-            <h3 className="hover:text-orange-500 text-gray-900 text-2xl font-bold mb-3">NEWSLETTER</h3>
-            <p className="hover:text-orange-500 text-sm mb-3">Stay updated with our latest trends</p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className=" px-3 py-2 w-full rounded-l-md  "
-              />
-              <button className="bg-orange-500 px-4 rounded-r-md font-bold text-white text-2xl">
-                <FontAwesomeIcon icon={faArrowRight} />
-              </button>
-            </div>
-          </div>
-      </section> */}
-
-      <Footer />
+<Footer/>
     </div>
   )
 }
-export default Home
+
+export default Car

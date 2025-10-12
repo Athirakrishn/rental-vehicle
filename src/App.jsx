@@ -4,7 +4,7 @@ import Home from './user/pages/Home'
 import About from './user/pages/About'
 import  Profile from './user/pages/Profile'
 import Contact from './user/pages/Contact'
-
+import Car from './pages/Car'
 // footer
 import Term from './pages/Term'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -20,6 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
 <Route path='/about' element={<About/>}/>
+<Route path='/car' element={<Car/>}/>
 <Route path='/contact' element={<Contact/>}/>
 <Route path='/profile' element={<Profile/>}/>
 {/* <Route path='' element={</>}/>
