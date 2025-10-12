@@ -1,4 +1,4 @@
-import { faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -9,54 +9,83 @@ function ViewCar() {
   return (
    <>
     <UserHeader/>
-  <div className='grid grid-cols-2 bg-gray-100'>
-    <div className="flex items-center justify-center ">
-    
-    </div>
+  
+    <div className="min-h-screen bg-gray-50 lg:col-span-2 flex justify-center items-center p-6">
+      <div className="bg-white rounded-2xl shadow-lg max-w-6xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 p-8">
+      
+        <div className="lg:col-span-2">
+          <h2 className="text-3xl font-bold mb-2">BMW X5</h2>
+          <p className="text-gray-500 mb-6">SUV • 2006</p>
 
-      <div className="flex items-center justify-center min-h-screen ">
-        <div className="bg-white w-[350px] rounded-2xl shadow-lg p-6">
-          <div className="flex items-end justify-between">
-            <h2 className="text-3xl font-bold text-gray-900">₹300</h2>
-            <span className="text-gray-500 text-sm">per day</span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div className="bg-gray-100 rounded-xl p-4 text-center">
+              <p className="font-semibold">4 Seats</p>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-4 text-center">
+              <p className="font-semibold">Hybrid</p>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-4 text-center">
+              <p className="font-semibold">Semi-Automatic</p>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-4 text-center">
+              <p className="font-semibold">New York</p>
+            </div>
           </div>
-  
-          <hr className="my-4" />
-  
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-1">
+
+
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold mb-2">Description</h3>
+            <p className="text-gray-600 leading-relaxed">
+              The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made
+              its debut in 1999 as the first SUV ever produced by BMW.
+            </p>
+          </div>
+
+     
+          <div>
+            <h3 className="text-lg font-semibold mb-3">Features</h3>
+            <div className="grid grid-cols-2 gap-2 text-gray-700">
+              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p>360 Camera</p>
+              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Bluetooth</p>
+              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> GPS</p>
+              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Heated Seats</p>
+              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Rear View Mirror</p>
+            </div>
+          </div>
+        </div>
+
+     
+        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div className="text-3xl font-bold mb-1">$300</div>
+            <p className="text-gray-500 mb-6">per day</p>
+
+            <label className="block text-sm font-semibold mb-2 text-gray-700">
               Pickup Date
             </label>
-        
-              <input
-                type="date"
-                placeholder="dd-mm-yyyy"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            
-            </div>
-  
-          <div className="mb-6">
-            <label className="block text-gray-700 font-medium mb-1">
+            <input
+              type="date"
+              className="w-full border border-gray-300 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <label className="block text-sm font-semibold mb-2 text-gray-700">
               Return Date
             </label>
-          
-              <input
-                type="date"
-                placeholder="dd-mm-yyyy"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-           
+            <input
+              type="date"
+              className="w-full border border-gray-300 rounded-lg p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <button className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+              Book Now
+            </button>
           </div>
-  
-   
-          <Link className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold p-2 rounded-lg transition-colors">
-            Book Now
-          </Link>
-  
+          <p className="text-center text-sm text-gray-500 mt-4">
+            No credit card required to reserve
+          </p>
         </div>
       </div>
-  </div>
+    </div>
  
     <Footer/>
    </>
