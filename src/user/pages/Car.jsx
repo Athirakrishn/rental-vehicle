@@ -11,7 +11,7 @@ function Car() {
       <UserHeader/>
 
       {/* search */}
-      <section className='h-80 bg-orange-100 grid grid-col'> 
+      <section className='h-80 bg-gray-100 grid grid-col'> 
          <div className=" flex flex-col justify-center items-center my-5">
           <h1 className='text-4xl font-bold text-gray-700 py-2'>Available <span className='text-orange-500'>C</span>ars </h1>
           <p className='text-gray-600 my-2'>Browse our selection of premium vehicles available for your next adventure
@@ -77,15 +77,17 @@ function Car() {
               </div>
             </div>
           </div>
-          <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4">
+          <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -94,12 +96,13 @@ function Car() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -119,16 +122,18 @@ function Car() {
                 </div>
               </div>
             </div>
-          </div>       
-          <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4">
+          </div>
+<div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -137,12 +142,13 @@ function Car() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -164,16 +170,17 @@ function Car() {
             </div>
           </div>
 
-
- <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4">
+<div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -182,12 +189,13 @@ function Car() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -208,15 +216,17 @@ function Car() {
               </div>
             </div>
           </div>
-          <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4">
+<div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -225,12 +235,13 @@ function Car() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -250,16 +261,18 @@ function Car() {
                 </div>
               </div>
             </div>
-          </div>       
-          <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4">
+          </div>
+<div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden my-5 hover:-translate-y-4" >
 
             <div className="relative">
 
-              <img
-                src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
-                alt="BMW X5"
-                className="w-full h-48 object-cover"
-              />
+             <Link to={'/car/:id/view'}>
+                <img
+                  src=" https://ik.imagekit.io/greatstack/tr:w-1280:q-auto:f-webp/cars/car_image1_PR9Npko2g.png"
+                  alt="BMW X5"
+                  className="w-full h-48 object-cover"
+                />
+             </Link>
 
               {/* Availability */}
               <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -268,12 +281,13 @@ function Car() {
 
               {/* Price */}
               <span className="absolute bottom-3 right-3 bg-black/80 text-white text-sm font-semibold px-3 py-1 rounded-lg">
-                $300 / day
+                $300 / day*
               </span>
             </div>
 
             {/* Content Section */}
             <div className="p-4">
+              
               <h3 className="text-lg font-semibold">BMW X5</h3>
               <p className="text-gray-500 text-sm mb-3">SUV · 2006</p>
 
@@ -286,18 +300,17 @@ function Car() {
                   <FontAwesomeIcon icon={faCab} /> <span>Hybrid</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faScrewdriverWrench
-                  } /> <span>Semi-Automatic</span>
+                  <FontAwesomeIcon icon={faScrewdriverWrench} /> <span>Semi-Automatic</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faMapPin
-                  } /> <span>New York</span>
+                  <FontAwesomeIcon icon={faMapPin} /> <span>New York</span>
                 </div>
               </div>
             </div>
-          </div>
-
-        </div>
+          </div>     
+          
+          
+         </div>
         
       </section>
 <Footer/>
