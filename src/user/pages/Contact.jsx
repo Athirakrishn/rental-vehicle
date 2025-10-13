@@ -1,10 +1,13 @@
 import React from 'react'
-import Header from '../components/UserHeader'
+import UserHeader from '../components/UserHeader'
 import Footer from '../../components/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faMailBulk, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
+
 function Contact() {
   return (
     <>
-    <Header/>
+    <UserHeader/>
   <div className=" text-center items-center p-10">
     <h1 className='text-3xl font-bold my-3'>Contacts</h1>
     <p className=''> 
@@ -29,7 +32,7 @@ function Contact() {
   <div className='bg-gray-300 rounded-[50%] p-3'>
     <FontAwesomeIcon icon={faMailBulk} className='text-3xl' />
   </div>
-  <h1 className='p-3'>BookStore@gmail.com </h1>
+  <h1 className='p-3'>UrbanGO@gmail.com </h1>
 </div>
 </div>
 

@@ -12,6 +12,8 @@ import RefundPolicy from './pages/RefundPolicy'
 import RentalAgreement from './pages/RentalAgreement'
 import PreeLoader from './components/PreeLoader'
 import ViewCar from './user/pages/ViewCar'
+import AdminDashBoad from './admin/pages/AdminDashBoad'
+import PNF from './pages/PNF'
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
 <Route path='/car/:id/view' element={<ViewCar/>}/>
 <Route path='/contact' element={<Contact/>}/>
 <Route path='/profile' element={<Profile/>}/>
+
+<Route path='/admin-dashboard' element={<AdminDashBoad/>}/>
+
 {/* <Route path='' element={</>}/>
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>
@@ -31,8 +36,7 @@ function App() {
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>
-<Route path='' element={</>}/>
-<Route path='' element={</>}/>
+
 <Route path='' element={</>}/>       
 <Route path='' element={</>}/>        */}
 
@@ -42,6 +46,10 @@ function App() {
   <Route path="/refund-policy" element={<RefundPolicy />} />
   <Route path="/rental-agreement" element={<RentalAgreement />} />
  <Route path='/preeloader' element={<PreeLoader/>}/>
+
+
+    <Route path='*' element={<PNF/>}/>
+
     </Routes>
     </>
   )
