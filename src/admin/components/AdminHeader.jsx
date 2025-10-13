@@ -22,7 +22,6 @@ function AdminHeader() {
             <Link to="/" className="hover:text-orange-500"> Home</Link>
             <Link to="/about" className="hover:text-orange-500">  About</Link>
             <Link to="/car" className="hover:text-orange-500">  Cars</Link>
-            <Link to="/deals" className="hover:text-orange-500">  My Bookings</Link>
             <Link to="/contact" className="hover:text-orange-500">  Contact</Link>
         
             <Link

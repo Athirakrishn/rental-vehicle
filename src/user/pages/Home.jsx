@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Header from '../components/UserHeader'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faStar, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -302,30 +302,117 @@ function Home() {
       </section>
 
       {/* testimonals */}
-      <section>
+     
+<section className="bg-white py-16 px-6">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-900 mb-2">
+      What Our Customers Say
+    </h2>
+    <p className="text-gray-500 max-w-xl mx-auto">
+      Discover why discerning travelers choose StayVenture for their luxury
+      accommodations around the world.
+    </p>
+  </div>
+  <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+    <div className="bg-white shadow-lg rounded-2xl p-6 text-center border border-gray-100 hover:shadow-xl transition-shadow">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          alt="Emma Rodriguez"
+          className="w-14 h-14 rounded-full mb-3 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Emma Rodriguez</h3>
+        <p className="text-gray-500 text-sm mb-2">Barcelona, Spain</p>
+        <div className="flex justify-center mb-4 text-yellow-500 text-lg">
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+        </div>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          “I've rented cars from various companies, but the experience with
+          CarRental was exceptional.”
+        </p>
+      </div>
+    </div>
 
-      </section>
+   
+    <div className="bg-white shadow-lg rounded-2xl p-6 text-center border border-gray-100 hover:shadow-xl transition-shadow">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="John Smith"
+          className="w-14 h-14 rounded-full mb-3 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">John Smith</h3>
+        <p className="text-gray-500 text-sm mb-2">New York, USA</p>
+       <div className="flex justify-center mb-4 text-yellow-500 text-lg">
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+        </div>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          “CarRental made my trip so much easier. The car was delivered right
+          to my door, and the customer service was fantastic!”
+        </p>
+      </div>
+    </div>
+
+
+    <div className="bg-white shadow-lg rounded-2xl p-6 text-center border border-gray-100 hover:shadow-xl transition-shadow">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://randomuser.me/api/portraits/women/68.jpg"
+          alt="Ava Johnson"
+          className="w-14 h-14 rounded-full mb-3 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Ava Johnson</h3>
+        <p className="text-gray-500 text-sm mb-2">Sydney, Australia</p>
+       <div className="flex justify-center mb-4 text-yellow-500 text-lg">
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+          <FontAwesomeIcon icon={faStar}/>
+        </div>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          “I highly recommend CarRental! Their fleet is amazing, and I always
+          feel like I'm getting the best deal with excellent service.”
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
 
       {/* subscription */}
-      {/* <section>
- <div>
-            <h3 className="hover:text-orange-500 text-gray-900 text-2xl font-bold mb-3">NEWSLETTER</h3>
-            <p className="hover:text-orange-500 text-sm mb-3">Stay updated with our latest trends</p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className=" px-3 py-2 w-full rounded-l-md  "
-              />
-              <button className="bg-orange-500 px-4 rounded-r-md font-bold text-white text-2xl">
-                <FontAwesomeIcon icon={faArrowRight} />
-              </button>
-            </div>
-          </div>
-      </section> */}
+      <section className=''>
+      <h1 className="text-4xl font-semibold flex justify-center items-center">
+        Never Miss a Deal!
+      </h1>
+      <p className='text-gray-500 px-8 flex justify-center items-center my-3'>Subscribe to get the latest offers, new arrivals, and exclusive discounts</p>
+      <div className="flex items-center justify-center bg-white py-5">
+  <div className="flex w-full max-w-md border border-gray-300 rounded-md overflow-hidden">
+    <input
+      type="email"
+      placeholder="Enter your email id"
+      className="flex-grow px-4 py-2 text-gray-700 focus:outline-none"
+    />
+    <button className="bg-blue-600 text-white font-semibold px-6 hover:bg-blue-700 transition-colors">
+      Subscribe
+    </button>
+  </div>
+</div>
+
+      </section> 
 
       <Footer />
-    </div>
+    </div> 
   )
 }
 export default Home
