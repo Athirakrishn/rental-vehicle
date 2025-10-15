@@ -54,7 +54,7 @@ function Footer() {
         </div>
 
 
-        <div className="bg-orange-500 text-gray-300 text-center py-4 text-sm">
+        <div className="bg-orange-500 text-gray-300 text-center py-2 text-sm">
           <p>
             Copyright © 2023 All rights reserved | This website is made with ♥ by <span className='bold text-m'>UrbanGO</span>
           </p>

@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Header from '../components/UserHeader'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faStar, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faSearch, faStar, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -15,7 +15,53 @@ function Home() {
           "url('https://www.enterprise.com/en/exotic-car-rental/vehicles/midsize-luxury-suv/_jcr_content/root/container/container/container_1805038189/image_1600151533.coreimg.jpeg/1665004956267/vehicle-category-list-page-hero-midsize-luxury-suv-1920x565.jpeg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"
       }}>
         <div className='h-120 w-full flex justify-center items-center ' style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>
+   
 
+{/* search and pick date */}
+
+    <div className="flex justify-center items-center ">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white px-6 py-4 rounded-full shadow-lg w-full max-w-4xl">
+        
+     
+        <div className="flex flex-col">
+          <label className="text-gray-800 font-medium">Pickup Location</label>
+          <select className="text-gray-500 focus:outline-none border-0">
+            <option>Please select location</option>
+            <option>Bangalore</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Chennai</option>
+             <option>Kerala</option>
+          </select>
+        </div>
+
+    
+        <div className="flex flex-col m-3">
+          <label className="text-gray-800 font-medium">Pick-up Date</label>
+          <input
+            type="date"
+            className="text-gray-600 border-0 focus:outline-none"
+            placeholder="dd-mm-yyyy"
+          />
+        </div>
+
+    
+        <div className="flex flex-col">
+          <label className="text-gray-800 font-medium">Return Date</label>
+          <input
+            type="date"
+            className="text-gray-600 border-0 focus:outline-none"
+            placeholder="dd-mm-yyyy"
+          />
+        </div>
+
+    
+        <button className="flex items-center gap-2 bg-orange-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-indigo-700 transition">
+          <FontAwesomeIcon icon={faSearch} />
+          Search
+        </button>
+      </div>
+    </div>
         </div>
 
       </section>

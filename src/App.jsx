@@ -24,6 +24,7 @@ function App() {
 <Route path='/about' element={<About/>}/>
 <Route path='/car' element={<Car/>}/>
 <Route path='/car/:id/view' element={<ViewCar/>}/>
+
 <Route path='/contact' element={<Contact/>}/>
 <Route path='/profile' element={<Profile/>}/>
 
@@ -31,7 +32,7 @@ function App() {
 
 {/* <Route path='' element={</>}/>
 <Route path='' element={</>}/>
-<Route path='' element={</>}/>
+
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>
 <Route path='' element={</>}/>
