@@ -2,10 +2,35 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Header from '../components/UserHeader'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCab, faMapPin, faScrewdriverWrench, faSearch, faStar, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCab, faChevronDown, faChevronUp, faMapPin, faScrewdriverWrench, faSearch, faStar, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function Home() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+  {
+    question: "How much does it cost to rent a car with UrbanGO?",
+    answer:
+      "The average cost to rent a car with UrbanGO starts around $45 per day, depending on the car type and rental duration.",
+  },
+  {
+    question: "What's a popular destination for renting a car with UrbanGO?",
+    answer:
+      "Many travelers choose UrbanGO to explore top destinations, enjoy scenic drives, and travel conveniently to their favorite spots.",
+  },
+  {
+    question: "What's the most popular car to rent with UrbanGO?",
+    answer:
+      "Compact cars and hybrid vehicles are the most popular choices with UrbanGO due to their fuel efficiency and easy parking.",
+  },
+];
+
   return (
     <div>
       <Header />
@@ -341,10 +366,40 @@ function Home() {
 
         
       </section>
+{/* <section>
+  <div>
+    <p></p>
+  </div>
+<div>
+    <img className="h-40" src="https://travelpricedrops.com/_next/image?url=%2Fimages%2Fworld-map.png%3Fv1.0&w=640&q=75" alt="" />
+  
+</div></section> */}
 
       {/* faq section */}
-      <section>
+      <section className=" md:mx-40 mx-10 md:h-100">
+      <h1 className=" text-3xl font-bold text-gray-900 mb-2">FAQs for UrbanGo car rentals</h1>
+      <div className="max-w-3xl sm:mx-auto my-10 bg-white border border-gray-500 rounded-2xl shadow-sm p-6">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-b border-gray-500 last:border-none">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center py-4 text-left text-lg font-medium text-gray-800 focus:outline-none"
+            >
+              {faq.question}
+              <FontAwesomeIcon
+                icon={openIndex === index ? faChevronUp : faChevronDown}
+                className="text-gray-500"
+              />
+            </button>
 
+            {openIndex === index && (
+              <p className="text-gray-600 pb-4 px-1 transition-all duration-200">
+                {faq.answer}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
       </section>
 
       {/* testimonals */}
