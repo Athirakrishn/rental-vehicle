@@ -1,4 +1,4 @@
-import { faCalendar, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faCar, faCircleCheck, faEye, faPhotoFilm } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -12,8 +12,11 @@ function ViewCar() {
   
     <div className="min-h-screen bg-gray-50 lg:col-span-2 flex justify-center items-center p-6">
       <div className="bg-white rounded-2xl shadow-lg max-w-6xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 p-8">
-      
+       
         <div className="lg:col-span-2">
+        <div className="flex justify-between">  <img src="https://tse3.mm.bing.net/th/id/OIP.f6ved8wranJjaO8g0qDStgHaEK?pid=Api&P=0&h=180" alt="" className="md:w-120 w-70 flex justify-center" />
+         <FontAwesomeIcon icon={faPhotoFilm} className="text-2xl text-gray-400"/>
+        </div>
           <h2 className="text-3xl font-bold mb-2">BMW X5</h2>
           <p className="text-gray-500 mb-6">SUV • 2006</p>
 
@@ -45,17 +48,17 @@ function ViewCar() {
           <div>
             <h3 className="text-lg font-semibold mb-3">Features</h3>
             <div className="grid grid-cols-2 gap-2 text-gray-700">
-              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p>360 Camera</p>
-              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Bluetooth</p>
-              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> GPS</p>
-              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Heated Seats</p>
-              <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/><p> Rear View Mirror</p>
+              <p><FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/>360 Camera</p>
+              <p><FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/> Bluetooth</p>
+              <p><FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/> GPS</p>
+              <p><FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/> Heated Seats</p>
+              <p><FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 '/> Rear View Mirror</p>
             </div>
           </div>
         </div>
 
      
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between">
+        <div className="h-100 bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div className="text-3xl font-bold mb-1">$300</div>
             <p className="text-gray-500 mb-6">per day</p>

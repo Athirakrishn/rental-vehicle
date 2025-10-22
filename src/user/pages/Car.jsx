@@ -13,13 +13,13 @@ function Car() {
       {/* search */}
       <section className='h-80 bg-gray-100 grid grid-col'> 
          <div className=" flex flex-col justify-center items-center my-5">
-          <h1 className='text-4xl font-bold text-gray-700 py-2'>Available <span className='text-orange-500'>C</span>ars </h1>
+          <h1 className='text-4xl font-bold text-gray-700 py-2'>Available <span className='text-indigo-600'>C</span>ars </h1>
           <p className='text-gray-600 my-2'>Browse our selection of premium vehicles available for your next adventure
 </p>
     
-            <input type='text' className='relative bg-white md:w-100 md:h-12 w-80 h-10 rounded-[50px] ' placeholder=' Search by make, model, or features'/>
+            <input type='text' className='relative bg-white md:w-100 md:h-12 w-80 h-10 rounded-[50px]  ' placeholder=' Search Your Car'/>
             
-          <  FontAwesomeIcon className=' absolute md:mt-24 mt-30 md:ml-80   text-3xl text-orange-300' icon={faMagnifyingGlass}  /> 
+          <  FontAwesomeIcon className=' absolute md:mt-24 mt-30 md:ml-80   text-3xl text-indigo-300' icon={faMagnifyingGlass}  /> 
        
      
       

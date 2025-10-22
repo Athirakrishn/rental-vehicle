@@ -81,7 +81,7 @@ function Home() {
         </div>
 
     
-        <button className="flex items-center gap-2 bg-orange-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-indigo-700 transition">
+        <button className="flex items-center gap-2 bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-indigo-700 transition">
           <FontAwesomeIcon icon={faSearch} />
           Search
         </button>
@@ -93,7 +93,7 @@ function Home() {
       {/*  explore cars */}
       <section>
         <div className=" flex flex-col justify-center items-center my-5">
-          <h1 className='text-4xl font-bold text-gray-600'>Featured <span className='text-orange-500'>C</span>ars </h1>
+          <h1 className='text-4xl font-bold text-gray-600'>Featured <span className='text-indigo-600'>C</span>ars </h1>
           <p className='md:mx-auto mx-10 font-semibold text-gray-700'>Explore our selection of premium vehicles available for your next adventure</p>
         </div>
         <div className=" md:grid md:grid-cols-3 md:px-39 place-items-center  ">
@@ -378,7 +378,7 @@ function Home() {
       {/* faq section */}
       <section className=" md:mx-40 mx-10 md:h-100">
       <h1 className=" text-3xl font-bold text-gray-900 mb-2">FAQs for UrbanGo car rentals</h1>
-      <div className="max-w-3xl sm:mx-auto my-10 bg-white border border-gray-500 rounded-2xl shadow-sm p-6">
+      <div className="max-w-6xl sm:mx-auto my-10 bg-white border border-gray-500 rounded-2xl shadow-sm p-6">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-500 last:border-none">
             <button
