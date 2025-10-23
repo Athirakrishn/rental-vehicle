@@ -22,7 +22,7 @@ function UserHeader() {
         </div>
 
 
-          <div className={listStatus ? "flex flex-col " : "hidden md:flex gap-6 text-gray-500 items-center font-medium text-xl"}>
+          <div className={listStatus ? "flex  flex-col  " : "hidden md:flex gap-6 text-gray-500 items-center font-medium text-xl"}>
             <Link to="/" className="hover:text-indigo-600"> Home</Link>
             <Link to="/about" className="hover:text-indigo-600">  About</Link> 
             <Link to="/car" className="hover:text-indigo-600">  Cars</Link>

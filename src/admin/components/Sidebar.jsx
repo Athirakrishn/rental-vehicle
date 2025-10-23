@@ -6,7 +6,7 @@ import React from 'react'
 function Sidebar() {
   return (
     <>
-    <div className="w-64 bg-white border-r  flex flex-col items-center py-20 pb-40">
+    <div className="w-64 bg-gray-50 border-r  flex flex-col items-center py-20 pb-40">
         <img
           src="https://via.placeholder.com/80"
           alt="User Avatar"
