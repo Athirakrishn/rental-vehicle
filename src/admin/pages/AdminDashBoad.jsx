@@ -287,21 +287,34 @@ function AdminDashBoad() {
             </div>
           </section>}
    
+    {/* view car images */}
+        {imageModal && 
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500/70 ">
+              <div className="bg-white rounded-2xl shadow-lg w-200">
+                <div className="flex justify-between items-center bg-indigo-600/50 h-10 rounded-t-2xl px-3">
+                  <FontAwesomeIcon icon={faCamera} className="text-gray-700 text-xl" />
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    onClick={() => setImageModal(false)}
+                    className="text-gray-700 text-xl cursor-pointer hover:text-red-500 transition"
+                  />
+                </div>
+                <div className="flex flex-col mx-5 py-5">
+                  <p className="text-gray-600 mb-4">No uploaded Images</p>
+                  <img
+                    src=""
+                    alt="car image"
+                    className="w-[200px] h-[180px] object-cover border border-gray-300 rounded-md"
+                  />
+                </div>
+              </div>
+            </div>
+        }
    
         </div>
         
       </div>
- {/* view car images */}
-        {imageModal && <section className="w-200 h-100 md:mx-70 bg-white ">
-          <div className="mt-0 w-200 h-8 rounded bg-indigo-600/50 flex justify-between">
-           <FontAwesomeIcon icon={faCamera} className="p-1 text-2xl text-gray-600"/>
-           <FontAwesomeIcon  onClick={()=>{setImageModal(false)}} icon={faXmark}  className="p-1 text-2xl text-gray-600" />
-          </div>
-          <div className="w-200 p-50  py-10 px-1">
-            <p>No uploaded Images</p>
-            <img src="" alt="" />
-          </div>
-        </section>}
+
  
       <Footer />
     </div>

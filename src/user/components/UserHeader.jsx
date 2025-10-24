@@ -1,4 +1,4 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState } from "react";
@@ -28,15 +28,14 @@ function UserHeader() {
             <Link to="/car" className="hover:text-indigo-600">  Cars</Link>
             <Link to="/deals" className="hover:text-indigo-600">  My Bookings</Link>
             <Link to="/contact" className="hover:text-indigo-600">  Contact</Link>
-            <Link
-              to="/login" 
-  className=" md:inline-block text-white bg-indigo-600 border border-gray-100 px-4 py-2 rounded-lg hover:text-indigo-600 hover:bg-white  transition"
-            >
-              Login
-            </Link>
+            <Link to="/login" 
+              className=" md:inline-block text-indigo-600 bg-bg-gray-50 border border  px-4 py-2 rounded-lg hover:text-indigo-600 hover:bg-white  transition"
+                        >
+                          Login
+                        </Link>
           </div>
           <button onClick={() => setListStatus(!listStatus)} className="md:hidden md:flex gap-6 text-gray-400 items-center font-medium text-4xl">
-            <FontAwesomeIcon  icon={faBars}/>
+            <FontAwesomeIcon  icon={listStatus?faXmark:faBars}/>
           </button>
       </div>
     </header>

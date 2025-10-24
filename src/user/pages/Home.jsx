@@ -35,7 +35,7 @@ function Home() {
     <div>
       <Header />
       {/* Hero section */}
-      <section className='h-120 flex justify-center items-center  ' style={{
+      <section className='h-120 md:w-full flex justify-center items-center  ' style={{
         backgroundImage:
           "url('https://www.enterprise.com/en/exotic-car-rental/vehicles/midsize-luxury-suv/_jcr_content/root/container/container/container_1805038189/image_1600151533.coreimg.jpeg/1665004956267/vehicle-category-list-page-hero-midsize-luxury-suv-1920x565.jpeg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"
       }}>
@@ -45,7 +45,7 @@ function Home() {
 {/* search and pick date */}
 
     <div className="flex justify-center items-center ">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white px-6 py-4 rounded-full shadow-lg w-full max-w-4xl">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white px-6 py-4 md:rounded-full rounded shadow-lg w-full  max-w-4xl">
         
      
         <div className="flex flex-col">

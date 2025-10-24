@@ -1,11 +1,13 @@
-import { faCalendar, faCar, faCircleCheck, faEye, faPhotoFilm } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faCamera, faCar, faCircleCheck, faEye, faPhotoFilm, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import UserHeader from '../components/UserHeader'
 import Footer from '../../components/Footer'
+import { useState } from 'react'
 
 function ViewCar() {
+  const [viewModal,setViewModal]=useState(false)
   return (
    <>
     <UserHeader/>
@@ -15,7 +17,7 @@ function ViewCar() {
        
         <div className="lg:col-span-2">
         <div className="flex justify-between">  <img src="https://tse3.mm.bing.net/th/id/OIP.f6ved8wranJjaO8g0qDStgHaEK?pid=Api&P=0&h=180" alt="" className="md:w-120 w-70 flex justify-center" />
-         <FontAwesomeIcon icon={faPhotoFilm} className="text-2xl text-gray-400"/>
+         <FontAwesomeIcon icon={faPhotoFilm} className="text-2xl text-gray-400" onClick={()=>setViewModal(true)}/>
         </div>
           <h2 className="text-3xl font-bold mb-2">BMW X5</h2>
           <p className="text-gray-500 mb-6">SUV • 2006</p>
@@ -90,6 +92,30 @@ function ViewCar() {
       </div>
     </div>
  
+
+{viewModal && 
+<div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500/70 ">
+      <div className="bg-white rounded-2xl shadow-lg w-200">
+        <div className="flex justify-between items-center bg-indigo-600/50 h-10 rounded-t-2xl px-3">
+          <FontAwesomeIcon icon={faCamera} className="text-gray-700 text-xl" />
+          <FontAwesomeIcon
+            icon={faXmark}
+            onClick={() => setViewModal(false)}
+            className="text-gray-700 text-xl cursor-pointer hover:text-red-500 transition"
+          />
+        </div>
+        <div className="flex flex-col mx-5 py-5">
+          <p className="text-gray-600 mb-4">No uploaded Images</p>
+          <img
+            src=""
+            alt="car image"
+            className="w-[200px] h-[180px] object-cover border border-gray-300 rounded-md"
+          />
+        </div>
+      </div>
+    </div>
+    }
+
     <Footer/>
    </>
   )
