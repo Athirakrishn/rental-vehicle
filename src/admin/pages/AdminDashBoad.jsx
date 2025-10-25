@@ -13,7 +13,7 @@ function AdminDashBoad() {
   const [manageBooking, setManageBooking] = useState(false)
   const [imageModal,setImageModal] = useState(false)
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50"> 
       <AdminHeader />
       <div className="grid grid-cols-2 lg:grid-cols-5 bg-gray-50">
 

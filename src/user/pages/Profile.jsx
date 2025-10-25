@@ -3,6 +3,7 @@ import Footer from '../../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck, faL } from '@fortawesome/free-solid-svg-icons'
 import UserHeader from '../components/UserHeader'
+import Edit from '../components/Edit'
 
 const Profile = () => {
 
@@ -20,7 +21,7 @@ const Profile = () => {
           <FontAwesomeIcon className='text-blue-400 ms-3 ' icon={faCircleCheck
           } />
         </div>
-        <p>Edit</p>
+        <Edit/>
       </div>
       <p className="md:px-20 px-5 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi ex delectus accusantium nemo, perspiciatis pariatur quo explicabo facilis sed blanditiis, ullam neque labore expedita qui itaque unde, repudiandae esse.
         Dignissimos, officia aut suscipit quo magni soluta commodi iste neque architecto, error, eaque exercitationem incidunt iure molestiae voluptatem quasi inventore culpa ipsam! Repellendus beatae adipisci cupiditate reiciendis non saepe fuga.</p>
