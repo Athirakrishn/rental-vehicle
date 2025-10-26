@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { toast, ToastContainer } from "react-toastify";
@@ -7,6 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 function Auth({ register }) {
   const [showPassword, setShowPassword] = useState(false);
   const[userDetails,setUserDetails]=useState({username:"",email:"",password:""})
+  const navigate =useNavigate()
   // console.log(userDetails);
   // Register
   const handleRegister = ()=>{
@@ -15,14 +16,23 @@ function Auth({ register }) {
     if(!username || !email || !password){
     toast.error("Please fill the form Completely !!!")
     }else{
-      toast.success("successfully Registered ")
+      toast.success("Registered successfully ..... ")
+      setUserDetails = ({username:"",email:"",password:""})
     }
     
   }
 
 
-// //  Login
-//   const handleLogin
+//  Login
+  const handleLogin =()=>{
+    console.log("inside handle login");
+    // if( ){
+    //   toast.error("Invalid User name or Password!!!")
+    // }else{
+    //   toast.success("Login successfully ...  ")
+    //    navigate('/')
+    // }
+  }
 // // GoogleLogin
 //   const handleGoogleLogin
 
@@ -117,10 +127,10 @@ function Auth({ register }) {
   
             
             <button
-              type="submit"
+              type="button"
               className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
             >
-              { register ? <Link to={'/register'}  onClick={handleRegister} >Register</Link> : <Link to={'/login'}>Login</Link> }
+              { register ? <Link to={'/register'}  onClick={handleRegister} >Register</Link> : <Link to={'/login'} onClick={handleLogin} >Login</Link> }
   
             </button>
           </form>
@@ -137,7 +147,7 @@ function Auth({ register }) {
   pauseOnFocusLoss
   draggable
   pauseOnHover
-  theme="light"
+  theme="colored"
 
   />
   </>
